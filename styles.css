@@ -1,0 +1,45 @@
+:root {
+    --white: #ffffff;
+    --gray1: #e2e8f0;
+    --blue: #1992d4;
+    --yellow1: #facc15;
+    --yellow2: #f0b429;
+}
+@font-face {
+    font-family: roboto;
+    src: url(font/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+}
+
+#main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+#main-container > div {
+    border: 1px solid black;
+}
+
+#sidebar {
+    background-color: var(--blue);
+    grid-row: 1 / 3;
+    height: 100%;
+}
+
+#sidebar > * {
+    color: var(--white);
+}
+
+.logo {
+    width: 20px;
+}
